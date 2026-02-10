@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Instagram, Linkedin, MessageCircle } from "lucide-react";
 import logo from "@/assets/studio-dini-logo.svg";
+import icon from "@/assets/studio-dini-icon.png";
 
 const socialLinks = [
   { icon: Instagram, href: "https://www.instagram.com/studiodini_/", label: "Instagram" },
@@ -21,15 +22,16 @@ const Index = () => {
   return (
     <div className="flex min-h-svh flex-col items-center justify-center bg-background px-6 py-12 selection:bg-primary selection:text-primary-foreground">
       <div className="flex w-full max-w-xl flex-col items-center text-center gap-12">
-        {/* Logo */}
-        <motion.img
-          src={logo}
-          alt="Studio Dini"
-          className="h-16 w-auto sm:h-20 md:h-28"
+        {/* Logos */}
+        <motion.div
+          className="flex flex-col items-center gap-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-        />
+        >
+          <img src={icon} alt="" className="h-16 w-auto sm:h-20 md:h-24" />
+          <img src={logo} alt="Studio Dini" className="h-16 w-auto sm:h-20 md:h-28" />
+        </motion.div>
 
         {/* Coming Soon */}
         <motion.div
