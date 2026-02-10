@@ -25,7 +25,7 @@ const Index = () => {
         <motion.img
           src={logo}
           alt="Studio Dini"
-          className="h-12 w-auto md:h-14"
+          className="h-16 w-auto sm:h-20 md:h-28"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
@@ -48,11 +48,11 @@ const Index = () => {
           <motion.h1
             custom={2}
             variants={fadeUp}
-            className="text-3xl leading-snug font-light tracking-tight text-foreground sm:text-4xl md:text-5xl md:leading-snug"
+            className="text-3xl leading-snug font-normal tracking-tight text-foreground sm:text-4xl md:text-5xl md:leading-snug"
           >
             Toda marca começa
             <br />
-            <span className="font-normal">de um sonho.</span>
+            de um sonho.
           </motion.h1>
 
           <motion.p
